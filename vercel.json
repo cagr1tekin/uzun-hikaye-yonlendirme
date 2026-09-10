@@ -4,7 +4,7 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://uzun-hikaye-qr.vercel.app/",
+      "destination": "https://altinozbobinaj.com",
       "permanent": false
     }
   ]
