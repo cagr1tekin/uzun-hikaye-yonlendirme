@@ -4,7 +4,7 @@ Masalardaki QR kodun gittiği **kalıcı adres**. Tek işi, ziyaretçiyi güncel
 adresine yönlendirmek.
 
 ```
-QR kod  →  yonlendirme.vercel.app  →  menü sitesi
+QR kod  →  uzun-hikaye-yonlendirme.vercel.app  →  menü sitesi
            (bu proje — asla değişmez)   (istediğiniz zaman değişir)
 ```
 
@@ -55,12 +55,20 @@ başlar. Masalardaki kodlara dokunulmaz.
 ## Yayına alma
 
 1. Vercel → **Add New Project** → bu repoyu seçin
-2. Project Name: `yonlendirme` (QR'a yazılacak adres bundan doğar — sonradan değiştirmeyin)
+2. Project Name: `uzun-hikaye-yonlendirme` (QR'a yazılacak adres bundan doğar — **sonradan değiştirmeyin**)
 3. Framework Preset: **Other**, Build Command boş, Output Directory boş
 4. Deploy
 
-Sonra `https://yonlendirme.vercel.app` adresini tarayıcıda açıp menüye
-düştüğünü doğrulayın. QR'ı ancak ondan sonra bastırın.
+## Durum
+
+Yayında ve çalışıyor:
+
+```
+https://uzun-hikaye-yonlendirme.vercel.app/  →  307  →  https://uzun-hikaye-qr.vercel.app/
+```
+
+Bu adres masalardaki QR koda basılıdır. **Proje adını, alan adını ve
+`permanent: false` ayarını değiştirmeyin.**
 
 ## Dosyalar
 
