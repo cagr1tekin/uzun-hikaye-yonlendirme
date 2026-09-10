@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Uzun Hikaye</title>
+
+  <!--
+    Bu sayfa normalde HİÇ GÖRÜNMEZ.
+
+    Yönlendirme vercel.json içinde sunucu tarafında yapılır: ziyaretçi bu
+    dosyaya ulaşmadan hedefe gider. Bu sayfayı gören biri varsa vercel.json
+    silinmiş, bozulmuş ya da deploy edilmemiş demektir.
+
+    Hedef adresi BURAYA yazmıyoruz — tek kaynak vercel.json olsun ki ikisi
+    birbirinden ayrı düşmesin.
+  -->
+
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem calc(1.5rem + env(safe-area-inset-left, 0px))
+               calc(2rem + env(safe-area-inset-bottom, 0px))
+               calc(1.5rem + env(safe-area-inset-right, 0px));
+      background: #0a0a0a;
+      color: #b6bcc6;
+      font: 400 1rem/1.6 "Outfit", system-ui, -apple-system, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      font-family: Georgia, "Cormorant Garamond", serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    h1 span { color: #ff7d55; font-style: italic; }
+    p { max-width: 36ch; font-weight: 300; }
+    code {
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      font-family: ui-monospace, monospace;
+      font-size: 0.9em;
+      color: #fff;
+    }
+    .not { font-size: 0.85rem; color: #8a9099; }
+  </style>
+</head>
+<body>
+  <h1>Uzun <span>Hikaye</span></h1>
+  <p>Menüye şu anda ulaşılamıyor.</p>
+  <p class="not">
+    Yönlendirme yapılandırması eksik. Bu projedeki
+    <code>vercel.json</code> dosyasını kontrol edin.
+  </p>
+</body>
+</html>

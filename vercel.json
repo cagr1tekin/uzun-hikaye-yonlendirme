@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://uzun-hikaye-qr.vercel.app/",
+      "permanent": false
+    }
+  ]
+}
